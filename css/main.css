@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=eurostile:wght@100;300;400;900&display=swap');
+
+@font-face {
+    font-family: 'eurostile';
+    src        : url(../font/eurostile/eurostile.woff);
+}
+
+
+    Body{
+        font-family: 'eurostile';
+        text-align : center;
+    }
+
+
+h1, h2, h3, h4, h5, h6{  
+    font-family: 'eurostile';
+}
+
+
+/* Heading */
+
+.big-heading{ /* Title, CTA */
+    font-family: 'eurostile';
+    font-size  : 3.5rem;
+    font-weight: 900;
+    line-height: 150%;
+}
+.medium-heading{ /*footer, princing*/
+    font-weight: bold;
+    font-size  : 2.5rem;
+    line-height: 1.5rem;
+    text-align : center;
+}
+
+
+
+/* ==== Navigation Bar ==== */
+.logo{
+    height: 48px;
+    width : auto;
+}
+
+#nav-bar{
+    padding: 1% 15% 9%;
+}
+.navbar{
+    padding   : 0 0 4.5rem;
+    z-index   : auto;
+    position  : relative;
+    text-align: center;
+}
+
+.navbar-brand{
+    font-family: 'eurostile';
+    font-size  : 2.5rem;
+    font-weight: bold;
+}
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-size  : 20px;
+    font-family: "eurostile";
+    font-weight: 400;
+    color      : #000;
+    text-align : center;
+}
+
+.nav-text{
+    border-width: 2px;
+    font-weight : 400;
+    font-size   : 18px;
+    padding     : 1.2rem;
+}
+
+/* ==== TITLE ==== */
+
+#title{
+    text-align: center;
+}
+
+/* ==== title-image ==== */
+.title-image {
+    width    : 50%;
+    transform: rotate(25deg);
+    position : absolute;
+    right    : 30%;
+}
+
+/* ==== title-Mobile ==== */
+@media (max-width: 1028px){
+    .title-image{
+        position : static;
+        transform: rotate(0deg);
+    }
+    #title{
+        text-align: center;
+    }
+
+}
+
+
+
+/* ==== Footer ==== */
+footer{
+    padding: 3% 5%;
+} 
+
+.copyright-text{ /* p */
+    color: grey;
+}
+.footer-icon{
+    margin-right: 10px;
+    margin-left : 10px;
+    color: #7510F7;
+}
+ 
+
+
+/* ==== Botões ==== */
+.nav-button{
+    background-color  : transparent;
+    border            : 1px solid #7510F7;
+    border-radius     : 75px;
+    color             : #7510F7;
+    transition        : all .2s ease-in-out ;
+    cursor            : pointer;
+    text-align        : center;
+    white-space       : nowrap;
+    -webkit-transition: all .5s ease-in-out;
+}
+.nav-button:hover{
+    background-color: #7510F7;
+    color           : white;
+}
+.nav-button{
+    border-width: 2px;
+    font-weight : 400;
+    font-size   : 18px;
+    padding     : 1.2rem;
+}
