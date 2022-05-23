@@ -6175,8 +6175,8 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .navbar-link:focus-within,
 .navbar-link:hover,
 .navbar-link.is-active {
-  background-color: #fafafa;
-  color: #485fc7;
+  background-color: transparent;
+  color: #7510F7;
 }
 
 .navbar-item {
@@ -6205,15 +6205,15 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .navbar-item.is-tab:focus, .navbar-item.is-tab:hover {
   background-color: transparent;
-  border-bottom-color: #485fc7;
+  border-bottom-color: #7510F7;
 }
 
 .navbar-item.is-tab.is-active {
   background-color: transparent;
-  border-bottom-color: #485fc7;
+  border-bottom-color: #7510F7;
   border-bottom-style: solid;
   border-bottom-width: 3px;
-  color: #485fc7;
+  color: #7510F7;
   padding-bottom: calc(0.5rem - 3px);
 }
 
@@ -6227,7 +6227,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 .navbar-link:not(.is-arrowless)::after {
-  border-color: #485fc7;
+  border-color: #7510F7;
   margin-top: -0.375em;
   right: 1.125em;
 }
@@ -6338,7 +6338,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
   .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
     background-color: whitesmoke;
-    color: #485fc7;
+    color: #7510F7;
   }
   .navbar-burger {
     display: none;
