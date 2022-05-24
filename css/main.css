@@ -15,7 +15,22 @@
 h1, h2, h3, h4, h5, h6{  
     font-family: 'eurostile';
 }
+h1::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
 
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
 
 /* Heading */
 
@@ -30,6 +45,11 @@ h1, h2, h3, h4, h5, h6{
     font-size  : 2.5rem;
     line-height: 1.5rem;
     text-align : center;
+}
+
+/* ==== CONTAINER ==== */
+.container-fluid{
+    padding-top: 1.5rem;
 }
 
 
@@ -106,7 +126,10 @@ h1, h2, h3, h4, h5, h6{
     }
     #title{
         text-align: center;
+        font-size: 12px;
     }
+
+    /* ==== EFFECT ==== */
     .glassmorfism{
         height: 60px;
         background: #fff;
@@ -116,7 +139,13 @@ h1, h2, h3, h4, h5, h6{
         transition: background-color 1s ease 0s;
       }
 
-      
+      /* ==== CONTAINER ==== */
+      .container-fluid{
+        padding-top: 0.5rem;
+        padding-left: 1.5rem;
+    }
+
+
 }
 
 
