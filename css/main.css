@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=eurostile:wght@100;300;400;900&display=swap');
+
 
 @font-face {
     font-family: 'eurostile';
@@ -11,9 +11,6 @@
         text-align : center;
     }
 
-    *, ::before, ::after {
-        box-sizing: inherit;
-    }
 
 
 h1, h2, h3, h4, h5, h6{  
@@ -195,7 +192,7 @@ footer{
 .footer-icon{
     margin-right: 10px;
     margin-left : 10px;
-    color       : #7510F7;
+    color       : #808080;
     width       : 30px;
     height      : 30px;
 }
@@ -206,6 +203,7 @@ footer{
     color       : #5B0CC2;
     width       : 30px;
     height      : 30px;
+    transition: .5s ease-in-out infinite;
 }
 
 
