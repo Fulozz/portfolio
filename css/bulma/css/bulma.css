@@ -1005,6 +1005,12 @@ fieldset[disabled] .button.is-dark.is-inverted.is-outlined {
   color: #fff;
 }
 
+.is-primary {
+  background-color: #7510F7;
+  color: #fff;
+  border-color: transparent;
+}
+
 .button.is-primary {
   background-color: #7512f8;
   border-color: transparent;
@@ -11814,7 +11820,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   flex-grow: 0;
   flex-shrink: 0;
 }
-
+.hero-foot {
+  padding: 0rem 1.5rem;
+}
+.hero-foot img.is-bottom {
+  margin-bottom: -0.4rem;
+}
 .hero-body {
   flex-grow: 1;
   flex-shrink: 0;
@@ -11828,7 +11839,16 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .section {
-  padding: 3rem 1.5rem;
+  padding: 5rem 1.5rem;
+}
+
+.section.is-primary .title {
+  color: #fff;
+}
+@media screen and (min-width: 769px){
+.section.is-long {
+    padding-bottom: 16rem;
+}
 }
 
 @media screen and (min-width: 1024px) {
@@ -11842,7 +11862,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     padding: 18rem 6rem;
   }
 }
-
+@media screen and (min-width: 769px){
+.hero-foot img.is-bottom {
+    margin-bottom: -0.45rem;
+    max-width: 860px;
+}
+}
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem;
