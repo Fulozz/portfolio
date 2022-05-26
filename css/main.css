@@ -11,16 +11,22 @@
         text-align : center;
     }
 
+    *, ::before, ::after {
+        box-sizing: inherit;
+    }
+
 
 h1, h2, h3, h4, h5, h6{  
     font-family: 'eurostile';
 }
-h1::after {
-    content: '|';
-    opacity: 1;
+
+
+.typeWriter::after {
+    content    : '|';
+    opacity    : 1;
     margin-left: 5px;
-    display: inline-block;
-    animation: blink .7s infinite;
+    display    : inline-block;
+    animation  : blink .7s infinite;
   }
 
   @keyframes blink {
@@ -32,8 +38,33 @@ h1::after {
     }
   }
 
-/* Heading */
+/* ==== Scrollbar ==== */
 
+  ::-webkit-scrollbar {
+    width      : 6px;
+    border-left: 1px solid #E6ECF8;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5B0CC2;
+}
+
+/* ==== filter ==== */
+
+.glassmorfism{
+    height                 : 60px;
+    background             : rgba( 255, 255, 255, 0.15 );
+    backdrop-filter        : blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border                 : none;
+    color                  : white;
+    z-index                : 100;
+    transition             : background-color 1s ease 0s;
+  }
+
+/* ==== Email ==== */
+
+/* ==== Heading ==== */
 .big-heading{ /* Title, CTA */
     font-family: 'eurostile';
     font-size  : 3.5rem;
@@ -46,6 +77,7 @@ h1::after {
     line-height: 1.5rem;
     text-align : center;
 }
+
 
 /* ==== CONTAINER ==== */
 .container-fluid{
@@ -69,16 +101,7 @@ h1::after {
     position  : relative;
     text-align: center;
 }
-.glassmorfism{
-    height: 60px;
-    background: rgba( 255, 255, 255, 0.15 );
-    backdrop-filter: blur( 1.5px );
-    -webkit-backdrop-filter: blur( 1.5px );
-    border: none;
-    color: white;
-    z-index: 100;
-    transition: background-color 1s ease 0s;
-  }
+
 .navbar-brand{
     font-family: 'eurostile';
     font-size  : 2.5rem;
@@ -110,38 +133,49 @@ h1::after {
 
 /* ==== title-image ==== */
 .title-image {
-    max-width    : 12%;
-    height: auto;
-    border-radius: 10px 10px 10px 10px;
-    border-bottom: 3px solid #7510F7;
-    border-top: 3px solid #7510F7;
+    max-width  : 100px;
+    padding-top: 10px;
+    height     : auto;
+    transform  : translateY(0px);
+    animation  : float 5s ease-in-out infinite;
 }
-
+ @keyframes float{
+     0%{
+         transform: translateY(0px);
+     }
+     50%{
+         transform: translateY(-25px);
+     }
+     100%{
+         transform: translateY(0px);
+     }
+ }
 
 /* ==== title-Mobile ==== */
 @media (max-width: 1028px){
     .title-image{
-        min-width: 190px;
-        height: auto;
+        padding-top: 10px;
+        min-width  : 50px;
+        height     : auto;
     }
     #title{
         text-align: center;
-        font-size: 12px;
+        font-size : 12px;
     }
 
     /* ==== EFFECT ==== */
     .glassmorfism{
-        height: 60px;
+        height    : 60px;
         background: #fff;
-        border: none;
-        color: white;
-        z-index: 100;
+        border    : none;
+        color     : white;
+        z-index   : 100;
         transition: background-color 1s ease 0s;
       }
 
       /* ==== CONTAINER ==== */
       .container-fluid{
-        padding-top: 0.5rem;
+        padding-top : 0.5rem;
         padding-left: 1.5rem;
     }
 
@@ -161,12 +195,23 @@ footer{
 .footer-icon{
     margin-right: 10px;
     margin-left : 10px;
-    color: #7510F7;
+    color       : #7510F7;
+    width       : 30px;
+    height      : 30px;
 }
- 
+
+.footer-icon:hover{
+    margin-right: 10px;
+    margin-left : 10px;
+    color       : #5B0CC2;
+    width       : 30px;
+    height      : 30px;
+}
+
 
 
 /* ==== Botões ==== */
+
 .nav-button{
     background-color  : transparent;
     border            : 1px solid #7510F7;
