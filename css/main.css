@@ -59,7 +59,6 @@ h1, h2, h3, h4, h5, h6{
     transition             : background-color 1s ease 0s;
   }
 
-/* ==== Email ==== */
 
 /* ==== Heading ==== */
 .big-heading{ /* Title, CTA */
@@ -87,6 +86,11 @@ h1, h2, h3, h4, h5, h6{
 .logo{
     height: 48px;
     width : auto;
+}
+.logoFooter{
+    height: 68px;
+    width : auto;
+    margin-bottom: 10px;
 }
 
 #nav-bar{
@@ -121,6 +125,29 @@ h1, h2, h3, h4, h5, h6{
     font-size   : 18px;
     padding     : 1.2rem;
 }
+/* ==== Botões ==== */
+
+.nav-button{
+    background-color  : transparent;
+    border            : 1px solid #7510F7;
+    border-radius     : 75px;
+    color             : #7510F7;
+    transition        : all .2s ease-in-out ;
+    cursor            : pointer;
+    text-align        : center;
+    white-space       : nowrap;
+    -webkit-transition: all .5s ease-in-out;
+}
+.nav-button:hover{
+    background-color: #7510F7;
+    color           : white;
+}
+.nav-button{
+    border-width: 2px;
+    font-weight : 400;
+    font-size   : 18px;
+    padding     : 1.2rem;
+}
 
 /* ==== TITLE ==== */
 
@@ -130,11 +157,10 @@ h1, h2, h3, h4, h5, h6{
 
 /* ==== title-image ==== */
 .title-image {
-    max-width  : 100px;
-    padding-top: 10px;
-    height     : auto;
-    transform  : translateY(0px);
-    animation  : float 5s ease-in-out infinite;
+    max-width: 100px;
+    height   : auto;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
 }
  @keyframes float{
      0%{
@@ -183,13 +209,15 @@ h1, h2, h3, h4, h5, h6{
 
 /* ==== Footer ==== */
 footer{
-    padding: 3% 5%;
+    padding-bottom: 1%;
+    padding-top: 3%;
 } 
 
 .copyright-text{ /* p */
-    color: grey;
+    opacity: 0.7;
+    margin-bottom: 3.5rem;
 }
-.footer-icon{
+.social-icon{
     margin-right: 10px;
     margin-left : 10px;
     color       : #808080;
@@ -197,37 +225,37 @@ footer{
     height      : 30px;
 }
 
-.footer-icon:hover{
+.social-icon:hover{
     margin-right: 10px;
     margin-left : 10px;
     color       : #5B0CC2;
-    width       : 30px;
-    height      : 30px;
-    transition: .5s ease-in-out infinite;
+
+    transition  : .5s ease-in-out infinite;
 }
 
+/* ==== Botão lateral ==== */
+#myBtn {
+    display         : none;
+    position        : fixed;
+    bottom          : 20px;
+    right           : 30px;
+    z-index         : 99;
+    border          : none;
+    outline         : none;
+    background-color: transparent;
+    color           : #5B0CC2;
+    cursor          : pointer;
+    padding         : 15px;
+    border-radius   : 100%;
+    font-size       : 18px;
+    font-weight     : 600;
+    font-family     : "eurostile";
+    border          : 2px solid #5B0CC2;
+  }
+  
+  #myBtn:hover {
+    transition      : 0.5s;
+    background-color: #5B0CC2;
+    color           : #fff;
+  }
 
-
-/* ==== Botões ==== */
-
-.nav-button{
-    background-color  : transparent;
-    border            : 1px solid #7510F7;
-    border-radius     : 75px;
-    color             : #7510F7;
-    transition        : all .2s ease-in-out ;
-    cursor            : pointer;
-    text-align        : center;
-    white-space       : nowrap;
-    -webkit-transition: all .5s ease-in-out;
-}
-.nav-button:hover{
-    background-color: #7510F7;
-    color           : white;
-}
-.nav-button{
-    border-width: 2px;
-    font-weight : 400;
-    font-size   : 18px;
-    padding     : 1.2rem;
-}
