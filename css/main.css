@@ -25,6 +25,9 @@ h1, h2, h3, h4, h5, h6{
     display    : inline-block;
     animation  : blink .7s infinite;
   }
+  .typeWriter{
+    text-shadow: 2px 2px 4px rgb(26, 25, 25);
+  }
 
   @keyframes blink {
     0%, 100% {
@@ -44,13 +47,14 @@ h1, h2, h3, h4, h5, h6{
 
 ::-webkit-scrollbar-thumb {
     background-color: #5B0CC2;
+    cursor:grab;
 }
 
 /* ==== filter ==== */
 
 .glassmorfism{
     height                 : 60px;
-    background             : rgba( 255, 255, 255, 0.15 );
+    background             : rgba( 255, 255, 255, 0.4 );
     backdrop-filter        : blur( 1.5px );
     -webkit-backdrop-filter: blur( 1.5px );
     border                 : none;
@@ -76,7 +80,7 @@ h1, h2, h3, h4, h5, h6{
 
 
 /* ==== CONTAINER ==== */
-.container-fluid{
+.container-fluid {
     padding-top: 1.5rem;
 }
 
@@ -87,10 +91,11 @@ h1, h2, h3, h4, h5, h6{
     height: 48px;
     width : auto;
 }
+
+
 .logoFooter{
     height: 68px;
     width : auto;
-    margin-bottom: 10px;
 }
 
 #nav-bar{
@@ -108,9 +113,12 @@ h1, h2, h3, h4, h5, h6{
     font-size  : 2.5rem;
     font-weight: bold;
 }
-.nav-item{
+.navbar-item,
+.nav-button {
     padding: 0 18px;
+    font-size: 1.2rem !important; 
 }
+
 .nav-link{
     font-size  : 20px;
     font-family: "eurostile";
@@ -121,24 +129,25 @@ h1, h2, h3, h4, h5, h6{
 
 .nav-text{
     border-width: 2px;
-    font-weight : 400;
+    font-weight : 600;
     font-size   : 18px;
     padding     : 1.2rem;
 }
 /* ==== Botões ==== */
 
-.nav-button{
-    background-color  : transparent;
+.btn-transition{
+    background-color  : #fff ;
     border            : 1px solid #7510F7;
-    border-radius     : 75px;
+    border-radius     : 20px;
     color             : #7510F7;
-    transition        : all .2s ease-in-out ;
     cursor            : pointer;
     text-align        : center;
     white-space       : nowrap;
+    transition        : all .2s ease-in-out ;
     -webkit-transition: all .5s ease-in-out;
 }
-.nav-button:hover{
+
+.btn-transition:hover{
     background-color: #7510F7;
     color           : white;
 }
@@ -147,6 +156,9 @@ h1, h2, h3, h4, h5, h6{
     font-weight : 400;
     font-size   : 18px;
     padding     : 1.2rem;
+}
+#cta-button{
+    margin-top: 30px;
 }
 
 /* ==== TITLE ==== */
@@ -161,13 +173,16 @@ h1, h2, h3, h4, h5, h6{
     height   : auto;
     transform: translateY(0px);
     animation: float 5s ease-in-out infinite;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
+
  @keyframes float{
      0%{
          transform: translateY(0px);
      }
      50%{
-         transform: translateY(-25px);
+         transform: translateY(-35px);
      }
      100%{
          transform: translateY(0px);
@@ -185,6 +200,7 @@ h1, h2, h3, h4, h5, h6{
         text-align: center;
         font-size : 12px;
     }
+    
 
     /* ==== EFFECT ==== */
     .glassmorfism{
@@ -201,10 +217,7 @@ h1, h2, h3, h4, h5, h6{
         padding-top : 0.5rem;
         padding-left: 1.5rem;
     }
-
-
 }
-
 
 
 /* ==== Footer ==== */
@@ -212,6 +225,10 @@ footer{
     padding-bottom: 1%;
     padding-top: 3%;
 } 
+.small-text{
+    opacity: 0.8;
+    font-size: 1.5rem;
+}
 
 .copyright-text{ /* p */
     opacity: 0.7;
@@ -223,15 +240,28 @@ footer{
     color       : #808080;
     width       : 30px;
     height      : 30px;
-}
 
-.social-icon:hover{
+}
+ 
+ .social-icon:hover{
     margin-right: 10px;
     margin-left : 10px;
     color       : #5B0CC2;
-
     transition  : .5s ease-in-out infinite;
-}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ==== Botão lateral ==== */
 #myBtn {
