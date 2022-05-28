@@ -1,5 +1,8 @@
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
+:root{
+  --purplo: #75
+}
 .button, .input, .textarea, .select select, .file-cta,
 .file-name, .pagination-previous,
 .pagination-next,
@@ -1067,7 +1070,7 @@ fieldset[disabled] .button.is-primary.is-inverted {
 }
 
 .button.is-primary.is-outlined {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.7);
   border-color: #7510F7;
   color: #7510F7;
 }
@@ -10049,23 +10052,23 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .is-size-1 {
-  font-size: 3rem !important;
+  font-size: 3.5rem !important;
 }
 
 .is-size-2 {
-  font-size: 2.5rem !important;
+  font-size: 3rem !important;
 }
 
 .is-size-3 {
-  font-size: 2rem !important;
+  font-size: 2.5rem !important;
 }
 
 .is-size-4 {
-  font-size: 1.5rem !important;
+  font-size: 2rem !important;
 }
 
 .is-size-5 {
-  font-size: 1.25rem !important;
+  font-size: 1.5rem !important;
 }
 
 .is-size-6 {
@@ -10078,19 +10081,19 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (max-width: 768px) {
   .is-size-1-mobile {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
   }
   .is-size-2-mobile {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
   }
   .is-size-3-mobile {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
   }
   .is-size-4-mobile {
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
   }
   .is-size-5-mobile {
-    font-size: 1.25rem !important;
+    font-size: 1.5rem !important;
   }
   .is-size-6-mobile {
     font-size: 1rem !important;
@@ -10102,19 +10105,19 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 769px), print {
   .is-size-1-tablet {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
   }
   .is-size-2-tablet {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
   }
   .is-size-3-tablet {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
   }
   .is-size-4-tablet {
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
   }
   .is-size-5-tablet {
-    font-size: 1.25rem !important;
+    font-size: 1.5rem !important;
   }
   .is-size-6-tablet {
     font-size: 1rem !important;
@@ -10126,19 +10129,19 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (max-width: 1023px) {
   .is-size-1-touch {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
   }
   .is-size-2-touch {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
   }
   .is-size-3-touch {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
   }
   .is-size-4-touch {
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
   }
   .is-size-5-touch {
-    font-size: 1.25rem !important;
+    font-size: 1.5rem !important;
   }
   .is-size-6-touch {
     font-size: 1rem !important;
@@ -10150,19 +10153,19 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 1024px) {
   .is-size-1-desktop {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
   }
   .is-size-2-desktop {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
   }
   .is-size-3-desktop {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
   }
   .is-size-4-desktop {
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
   }
   .is-size-5-desktop {
-    font-size: 1.25rem !important;
+    font-size: 1.5rem !important;
   }
   .is-size-6-desktop {
     font-size: 1rem !important;
@@ -10174,7 +10177,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 1216px) {
   .is-size-1-widescreen {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
   }
   .is-size-2-widescreen {
     font-size: 2.5rem !important;
@@ -10198,19 +10201,19 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 1408px) {
   .is-size-1-fullhd {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
   }
   .is-size-2-fullhd {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
   }
   .is-size-3-fullhd {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
   }
   .is-size-4-fullhd {
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
   }
   .is-size-5-fullhd {
-    font-size: 1.25rem !important;
+    font-size: 1.5rem !important;
   }
   .is-size-6-fullhd {
     font-size: 1rem !important;
