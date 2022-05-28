@@ -88,8 +88,10 @@ h1, h2, h3, h4, h5, h6{
 
 /* ==== Navigation Bar ==== */
 .logo{
+    position: relative;
     height: 48px;
     width : auto;
+    top: -13px;
 }
 
 
@@ -202,7 +204,12 @@ h1, h2, h3, h4, h5, h6{
         text-align: center;
         font-size : 12px;
     }
-    
+    .logo{
+        position: relative;
+        height: 48px;
+        width : auto;
+        top: 0px;
+    }
 
     /* ==== EFFECT ==== */
     .glassmorfism{
