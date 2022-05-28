@@ -1070,7 +1070,7 @@ fieldset[disabled] .button.is-primary.is-inverted {
 }
 
 .button.is-primary.is-outlined {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
   border-color: #7510F7;
   color: #7510F7;
 }
