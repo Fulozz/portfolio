@@ -12,6 +12,7 @@
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
   --green: #64ffda;
+  --green-shadow: rgba(100, 255, 218,0.1);
   --green-tint: rgba(100,255,218,0.1);
   --pink: #f57dff;
   --blue: #57cbff;
@@ -1077,15 +1078,17 @@ fieldset[disabled] .button.is-primary.is-inverted {
 }
 
 .button.is-primary.is-outlined {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-color: var(--navy);
-  color: var(--navy);
-}
-
-.button.is-primary.is-outlined:hover, .button.is-primary.is-outlined.is-hovered, .button.is-primary.is-outlined:focus, .button.is-primary.is-outlined.is-focused {
   background-color: var(--navy);
-  border-color: var(--navy);
-  color: #fff;
+  border-color: var(--green);
+  color: var(--light-slate);
+}
+.button.is-primary.is-outlined.is-loading::after {
+  border-color: transparent transparent var(--navy) !important;
+}
+.button.is-primary.is-outlined:hover, .button.is-primary.is-outlined.is-hovered, .button.is-primary.is-outlined:focus, .button.is-primary.is-outlined.is-focused {
+  background-color: var(--green-shadow);
+  border-color: var(--green);
+  color: var(--light-slate);
 }
 
 .button.is-primary.is-outlined.is-loading::after {
@@ -6300,7 +6303,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     display: none;
   }
   .navbar-menu {
-    background-color: white;
+    background-color: var(--navy);
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0;
   }
