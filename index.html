@@ -15,13 +15,13 @@
   <link rel="stylesheet" href="css/bulma/css/bulma.css.map">
 
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
     rel="stylesheet">
 
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="css/sideNav.css">
+  <link rel="stylesheet" href="css/about.css">
 
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/2bf71db075.js" crossorigin="anonymous"></script>
@@ -32,10 +32,9 @@
 
 
 <body>
-
   <section id="nav-bar">
 
-    <nav class="navbar glassmorfism is-fixed-top " role="navigation" aria-label="main navigation">
+    <nav class="navbar transparent is-fixed-top " role="navigation" aria-label="main navigation">
       <div class="container container-fluid">
         <div class="navbar-brand">
           <a class="navbar-item" onclick="topFunction()">
@@ -50,8 +49,8 @@
         <div class="navbar-menu" id="navMenu">
           <div class="navbar-start"></div>
           <div class="navbar-end">
-                <a class="navbar-item" href="#about">About</a>            
-            <div class="navbar-item"><a class="button is-primary is-outlined is-rounded btn-transition"
+                <a class="navbar-item is-5" href="#about">about.Me</a>            
+            <div class="navbar-item"><a class="button is-primary is-outlined btn-transition is-5"
                 href="#footer">contact.Me</a></div>
           </div>
         </div>
@@ -59,17 +58,15 @@
     </nav>
 
   </section>
-
+<main>
   <section class="title">
-    <div class="column">
+    <div class="column main-display">
       <h1 class="big-heading is-size-1-desktop is-size-2-tablet is-size-3-mobile typeWriter"> Front-end Developer
         Apprendice </h1>
 
       <h2 class="subtitle is-size-4-desktop"> I code beautifully simple things, and I love it</h2>
       <!-- </> -->
-      <img src="img/title-images/less-than.png" class="title-image">
-      <img src="img/title-images/slash.png" class="title-image">
-      <img src="img/title-images/greater-than.png" class="title-image">
+
 
       <br>
       <div class="hero-foot">
@@ -80,11 +77,29 @@
 
   </section>
 
-  <section class="section is-medium is-primary has-text-centered is-long">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-three-fifths">
-          <h1  id="about" class="title is-spaced is-size-3-desktop is-size-4-mobile"> Hi, I'm Thiago. Nice to meet you.</h1>
+  <section id="about"class="section is-medium is-primary left is-long">
+    <h1 class="numbered-heading"> about.Me</h1> 
+    <div class="inner">
+      <div class="about-text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque animi non nam nisi nostrum.
+           Velit sapiente obcaecati natus similique aliquid enim id distinctio consequuntur.
+            Ex minima in labore voluptas. Id!
+          </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Adipisci ex repudiandae molestias ipsum eligendi aliquid, minus praesentium quasi asperiores labore maxime accusamus?
+            Facilis saepe ducimus assumenda quasi nisi eaque reiciendis.
+          </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Perferendis harum at esse ut non accusamus,
+            quidem iste tenetur corrupti magni vitae omnis nostrum,
+             numquam suscipit praesentium molestias aliquam dolorem assumenda!
+        </p>
+      </div>
+      <div class="about-photo">
+        <div class="wrapper">
+          <picture>
+            <img src="img/me/me-full.png" class="my-photo">
+          </picture>
         </div>
       </div>
     </div>
@@ -92,7 +107,7 @@
   </section>
 
 </body>
-
+</main>
 
 
 <footer id="footer" class="section is-short has-text-centered">
@@ -169,7 +184,7 @@
 
 
   <!-- Meus scripts -->
-  <script src="js/btnJS.js"></script>
+  <script src="js/btnJS.js"> </script>
   <script src="js/typeWriter.js"></script>
 
 
