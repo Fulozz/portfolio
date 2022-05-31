@@ -27,6 +27,7 @@
     --border-radius: 4px;
   }
 
+  
 @font-face {
     font-family: 'eurostile';
     src        : url(../font/eurostile/eurostile.woff);
@@ -302,6 +303,47 @@ p{
         background-color: var(--navy);
     }
 }
+
+
+
+/* ==== PROJECTS ==== */
+.project-thumb{
+    border-radius: 10px;
+    background-color: #FF4C68;
+    width: auto;
+    height: 300px;
+}
+.project-thumb:hover{
+    opacity: 0;
+    background-color: #FF4C68;
+}
+.project-text{
+    color: #fff;
+    padding-bottom: 20%;
+}
+
+.project-button{
+    position: relative;
+    left: 0; 
+    text-align: center;
+    opacity: 1;
+    transition: opacity .35s ease-in-out;
+    
+}
+.project-button:hover{
+    background-color: var(--navy);
+}
+.project-button button{
+    width: 200px;
+    color: #FF4C68;
+    z-index: 1;
+}
+.project-container:hover .project-button{
+    opacity: 1;
+}
+
+
+
 
 
 /* ==== Footer ==== */
