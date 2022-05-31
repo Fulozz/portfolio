@@ -42,8 +42,6 @@
 .numbered-heading::before {
   position: relative;
   bottom: -3px;
-  counter-increment: section 1;
-  content: "0" counter(section) ".";
   margin-right: 10px;
   color: var(--green);
   font-family: var(--font-mono);
@@ -68,12 +66,13 @@
     margin: 50px auto 0px;
     width: 70%;
     height: 70%;
-  }
-  .about-photo{
     right: 50% ;
+    position: relative;
+    bottom: 3.5rem;
   }
 
 }
+
 
 
 .inner {
@@ -109,9 +108,10 @@
 
 .my-photo{
   position: relative;
-  bottom: 3.5rem;
+  bottom: 5rem;
   width: auto;
   height: 500px;
   border-radius: 4px;
+  
 }
 /* DEIXAR IMAGEM REDONDA P/ ficar amigavel */
