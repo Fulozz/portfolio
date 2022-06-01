@@ -304,6 +304,103 @@ p{
     }
 }
 
+/* ==== ABOUT ME ==== */
+
+.about-heading {
+    color: var(--lightest-slate);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: clamp(26px,5vw,var(--fz-heading));
+    white-space: nowrap;
+  }
+  
+  .about-heading::before {
+    position: relative;
+    bottom: -3px;
+    margin-right: 10px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-md),3vw,var(--fz-xl));
+    font-weight: 400;
+  }
+  .about-heading::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 2px;
+    width: 400px;
+    height: 1px;
+    margin-left: 10px;
+    background-color: var(--lightest-navy);
+  }
+  
+  
+  
+  @media (min-width: 1028px) {
+    .about-photo {
+      margin: 50px auto 0px;
+      width: 70%;
+      height: 70%;
+      right: 50% ;
+      position: relative;
+      bottom: 3.5rem;
+    }
+  
+  }
+  .inner {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 50px;
+  }
+  .about-photo {
+    position: relative;
+    max-width: 300px;
+  }
+  .about-photo .wrapper {
+    transition: var(--transition);
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: transparent;
+    left: 50% ;
+  }
+  .about-photo .wrapper::after {
+    border: 2px solid var(--green);
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+  }
+  .my-photo{
+    position: relative;
+    bottom: 5rem;
+    width: auto;
+    height: 500px;
+    border-radius: 4px;
+  }
+
+
+
+/* ==== SKILLS ==== */
+
+.content-background{
+    background-color: var(--dark-navynavy) !important;
+    text-shadow: none;
+    padding: 70px 45px;
+}
+.design{
+    border-right: solid 1px var(--dark-slate);
+}
+.frontend{
+    border-right: 1px solid var(--dark-slate);
+}
+
+
 
 
 /* ==== PROJECTS ==== */
@@ -338,6 +435,30 @@ p{
     }
 }
 
+a.tip {
+    text-decoration: none
+}
+
+a.tip span {
+    display: none;
+    color: #fff;
+    font-family: 'eurostile' ;
+    text-align: center;
+    font-size: 1.75rem;
+}
+a.tip:hover span {
+    display: block;
+    z-index: 100;
+    left: 0px;
+    margin: 10px;
+    width: 250px;
+    position: relative;
+    top: -150px;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+
 
 
 
@@ -357,7 +478,12 @@ footer{
     opacity      : 0.7;
     margin-bottom: 3.5rem;
 }
-
+.bulma{
+    padding-top: 10px;
+    width: 200px;
+    height: auto ;
+    opacity: 0.7;
+}
 
 .social-icon{
     margin-right: 10px;
