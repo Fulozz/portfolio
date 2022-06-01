@@ -485,7 +485,7 @@ table th {
   background-color: white;
   border-radius: 6px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
-  color: #4a4a4a;
+  color: var(--slate);
   display: block;
   padding: 1.25rem;
 }
@@ -2006,7 +2006,7 @@ fieldset[disabled] .button {
 .content h4,
 .content h5,
 .content h6 {
-  color: #363636;
+  color: var(--green);
   font-weight: 600;
   line-height: 1.125;
 }
@@ -2086,8 +2086,8 @@ fieldset[disabled] .button {
 }
 
 .content ul {
-  list-style: disc outside;
-  margin-left: 2em;
+  list-style: none;
+  margin-left: 0em;
   margin-top: 1em;
 }
 
@@ -9055,7 +9055,7 @@ a.has-text-dark:hover, a.has-text-dark:focus {
 }
 
 .has-text-primary {
-  color: var(--navy) !important;
+  color: var(--green) !important;
 }
 
 a.has-text-primary:hover, a.has-text-primary:focus {
