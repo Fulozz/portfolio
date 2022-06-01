@@ -13,7 +13,7 @@
   <link rel="icon" href="img/favicon/android-chrome-512x512.png">
   <link rel="icon" href="img/favicon/apple-touch-icon.png">
   <link rel="icon" href="img/favicon/favicon.ico">
-  
+
 
   <!-- Bulma Stylesheet -->
   <link rel="stylesheet" type="text/css" href="css/bulma/css/bulma.css">
@@ -85,7 +85,7 @@
     </section>
 
     <section id="about" class="section is-medium is-primary left is-long">
-      <h1 class="numbered-heading"> about.Me</h1>
+      <h1 class="about-heading"> about.Me</h1>
       <div class="inner">
         <div class="about-text">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque animi non nam nisi nostrum.
@@ -113,14 +113,79 @@
       </div>
 
     </section>
+<section id="skills" class="section skills has-text-centered">
+
+  <div class="container is-narrow">
+    <div class="box content-background">
+      <div class="content">
+        <div class="columns is-centered">
+          <div class="column design">
+            <figure>
+              <img src="img/skill-icons/designer.svg" alt="design">
+            </figure>
+            <h1 class="skills-title">Design</h1>
+            <p>I'm learning a lot but I highly value a clean design with powerful interactions</p>
+            <p class="list-title has-text-primary has-text-weight-normal ">Things I enjoy designing:</p>
+            <p>UI, UX, Responsive sites for mobile</p>
+            <p class="list-title has-text-primary has-text-weight-normal">Design Tools i am lerning:</p>
+            <ul>
+              <li>Figma</li>
+              <li>Sketch</li>
+              <li>Adobe XD</li>
+            </ul>
+          </div>
+
+          <div class="column frontend">
+            <figure>
+              <img src="img/skill-icons/frontend.svg" alt="frontend">
+            </figure>
+            <h1 class="skills-title">Front-End</h1>
+            <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+            <p class="list-title has-text-primary has-text-weight-normal ">Languages I speak:</p>
+            <p>HTML, CSS, JavaScript, </p>
+            <p class="list-title has-text-primary has-text-weight-normal">Dev Tools:</p>
+            <ul>
+              <li>Visual Studios Code</li>
+              <li>Bootstrap</li>
+              <li>Bulma</li>
+              <li>CodePen</li>
+              <li>GitHub</li>
+              <li>Atom</li>
+            </ul>
+
+          </div>
+
+          <div class="column">
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
 <section id="projects" class="section is-medium is-primary left is-long">
-  <h1 class="numbered-heading"> my.Works</h1>
+  <h1 class="about-heading"> my.Works</h1>
     <div class="columns">
       <div class="column project">  
         <div class="project-background"> 
-          <a href="projects/TinDog-Improved-main/tindog-index.html" rel="noopener">
+          <a href="projects/TinDog-Improved-main/tindog-index.html" class="tip" target="_blank" rel="noopener">
+            <title>Made with bootstrap 5</title>
             <img src="img/projects-image/tindog-256x256.jpg" class="project__image">
-          </a>         
+            
+          </a>
         </div>
 
 
@@ -140,12 +205,7 @@
 
   </div>
 
-
-
 </section>
-
-    
-
 
 
 </body>
@@ -214,9 +274,9 @@
           <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
           <line x1="12" y1="2" x2="12" y2="8.5"></line>
         </svg>
-
       </a>
     </div>
+    <img src="img/made-with/made-with-bulma--white.png" class="bulma">
   </div>
   <br>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
