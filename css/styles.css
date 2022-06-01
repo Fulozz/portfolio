@@ -306,7 +306,7 @@ p{
 
 /* ==== ABOUT ME ==== */
 
-.about-heading {
+.about-heading, .projects-heading {
     color: var(--lightest-slate);
     display: flex;
     -webkit-box-align: center;
@@ -318,7 +318,7 @@ p{
     white-space: nowrap;
   }
   
-  .about-heading::before {
+  .about-heading::before, .projects-heading::before  {
     position: relative;
     bottom: -3px;
     margin-right: 10px;
@@ -327,7 +327,7 @@ p{
     font-size: clamp(var(--fz-md),3vw,var(--fz-xl));
     font-weight: 400;
   }
-  .about-heading::after {
+  .about-heading::after, .projects-heading::after {
     content: "";
     display: block;
     position: relative;
@@ -340,14 +340,20 @@ p{
   
   
   
-  @media (min-width: 1028px) {
-    .about-photo {
+  @media (max-width: 1028px) {
+    .about-photo 
+    .wrapper{
       margin: 50px auto 0px;
       width: 70%;
       height: 70%;
       right: 50% ;
       position: relative;
       bottom: 3.5rem;
+    }
+    .column-backend, 
+    .column-design, 
+    .column-frontend{
+        border: none !important;
     }
   
   }
@@ -360,6 +366,7 @@ p{
   .about-photo {
     position: relative;
     max-width: 300px;
+
   }
   .about-photo .wrapper {
     transition: var(--transition);
@@ -368,7 +375,7 @@ p{
     width: 100%;
     border-radius: var(--border-radius);
     background-color: transparent;
-    left: 50% ;
+    left: 25%;
   }
   .about-photo .wrapper::after {
     border: 2px solid var(--green);
@@ -381,7 +388,7 @@ p{
     bottom: 5rem;
     width: auto;
     height: 500px;
-    border-radius: 4px;
+    border-radius: 10px;
   }
 
 
@@ -393,12 +400,16 @@ p{
     text-shadow: none;
     padding: 70px 45px;
 }
-.design{
+.column-design{
     border-right: solid 1px var(--dark-slate);
 }
-.frontend{
+.column-frontend{
     border-right: 1px solid var(--dark-slate);
 }
+.backend{
+    width: 60px;
+}
+
 
 
 
@@ -416,12 +427,16 @@ p{
     transition: all .5s ease;
     transform: scale(1);
     -webkit-transform: scale(1);
+    filter: blur(1.5px);
+    -webkit-filter: blur(1.5px); 
 }
 
 .project__image:hover{
     opacity: 1;
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
 }
 
 @media (max-width: 1028px){
@@ -434,6 +449,7 @@ p{
         opacity: 1;
     }
 }
+
 
 a.tip {
     text-decoration: none
@@ -457,7 +473,15 @@ a.tip:hover span {
     transition: all 1s ease;
     overflow: hidden;
 }
-
+.projects-subtitle{
+    position: relative;
+    color: var(--slate);
+    bottom: 1rem;
+    left: 0.5rem;
+}
+strong.hover-see{
+    color: var(--green);
+}
 
 
 
