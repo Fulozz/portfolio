@@ -307,41 +307,36 @@ p{
 
 
 /* ==== PROJECTS ==== */
-.project-thumb{
+
+.project{
+    width: 256px;
+    height: auto;
+}
+
+.project__image{
     border-radius: 10px;
-    background-color: #FF4C68;
-    width: auto;
-    height: 300px;
-}
-.project-thumb:hover{
-    opacity: 0;
-    background-color: #FF4C68;
-}
-.project-text{
-    color: #fff;
-    padding-bottom: 20%;
+    opacity: 0.7;
+    transition: all .5s ease;
+    transform: scale(1);
+    -webkit-transform: scale(1);
 }
 
-.project-button{
-    position: relative;
-    left: 0; 
-    text-align: center;
+.project__image:hover{
     opacity: 1;
-    transition: opacity .35s ease-in-out;
-    
-}
-.project-button:hover{
-    background-color: var(--navy);
-}
-.project-button button{
-    width: 200px;
-    color: #FF4C68;
-    z-index: 1;
-}
-.project-container:hover .project-button{
-    opacity: 1;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
 }
 
+@media (max-width: 1028px){
+    .project{
+       position: relative;
+       text-align: center;
+       left: 25%;
+    }
+    .project__image{
+        opacity: 1;
+    }
+}
 
 
 
@@ -358,6 +353,7 @@ footer{
 }
 
 .copyright-text{ /* p */
+    color: var(--light-slate);
     opacity      : 0.7;
     margin-bottom: 3.5rem;
 }
