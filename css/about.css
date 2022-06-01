@@ -29,6 +29,7 @@
 
 
 .numbered-heading {
+  color: var(--lightest-slate);
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -53,9 +54,9 @@
   display: block;
   position: relative;
   top: 2px;
-  width: 300px;
+  width: 400px;
   height: 1px;
-  margin-left: 20px;
+  margin-left: 10px;
   background-color: var(--lightest-navy);
 }
 
@@ -112,6 +113,5 @@
   width: auto;
   height: 500px;
   border-radius: 4px;
-  
 }
 /* DEIXAR IMAGEM REDONDA P/ ficar amigavel */
