@@ -52,11 +52,13 @@
           </a>
         </div>
         <div class="navbar-menu" id="navMenu">
-          <div class="navbar-start"></div>
+
           <div class="navbar-end">
+            <a class="navbar-item is-5" href="#projects">my.Works</a>           
             <a class="navbar-item is-5" href="#about">about.Me</a>
-            <div class="navbar-item"><a class="button is-primary is-outlined btn-transition is-5"
-                href="#footer">contact.Me</a></div>
+            <div class="navbar-item">
+              <a class="button is-primary is-outlined btn-transition is-5"href="#footer">contact.Me</a>
+            </div>
           </div>
         </div>
       </div>
@@ -119,7 +121,7 @@
     <div class="box content-background">
       <div class="content">
         <div class="columns is-centered">
-          <div class="column design">
+          <div class="column column-design">
             <figure>
               <img src="img/skill-icons/designer.svg" alt="design">
             </figure>
@@ -135,7 +137,7 @@
             </ul>
           </div>
 
-          <div class="column frontend">
+          <div class="column column-frontend">
             <figure>
               <img src="img/skill-icons/frontend.svg" alt="frontend">
             </figure>
@@ -155,9 +157,22 @@
 
           </div>
 
-          <div class="column">
 
-          </div>
+            <div class="column column-backend">
+              <figure>
+                <img src="img/skill-icons/backend.png" alt="backend" class="backend">
+              </figure>
+              <h1 class="skills-title">Back-End</h1>
+              <p>I'm currently focused on Front-end but I'm slowly learning the back-end base</p>
+              <p class="list-title has-text-primary has-text-weight-normal ">Languages I learning:</p>
+              <p>TypeScript, JavaScript, php </p>
+              <p class="list-title has-text-primary has-text-weight-normal">Frameworks I learning:</p>
+              <ul>
+                <li>Vue.JS</li>
+                <li>React</li>
+                <li>Angular</li>
+              </ul>
+            </div>
 
 
         </div>
@@ -177,12 +192,13 @@
 
 
 <section id="projects" class="section is-medium is-primary left is-long">
-  <h1 class="about-heading"> my.Works</h1>
+  <h1 class="projects-heading">my.Works</h1>
+  <h4 class="subtitle projects-subtitle">All projects are personal, for training and personal development. <strong class="hover-see"> Hover to see better! </strong></h4>
     <div class="columns">
       <div class="column project">  
         <div class="project-background"> 
-          <a href="projects/TinDog-Improved-main/tindog-index.html" class="tip" target="_blank" rel="noopener">
-            <title>Made with bootstrap 5</title>
+        
+          <a href="projects/TinDog-Improved-main/tindog-index.html" class="tip" rel="noopener">
             <img src="img/projects-image/tindog-256x256.jpg" class="project__image">
             
           </a>
