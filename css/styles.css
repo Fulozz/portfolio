@@ -331,7 +331,10 @@ p {
 /* ==== ABOUT ME ==== */
 
 .about-heading,
-.projects-heading {
+.projects-heading, 
+.works-heading
+/* .contact-heading */
+ {
     color: var(--lightest-slate);
     display: flex;
     -webkit-box-align: center;
@@ -344,7 +347,9 @@ p {
 }
 
 .about-heading::before,
-.projects-heading::before {
+.projects-heading::before, 
+.works-heading::before
+/* .contact-heading::before*/ { 
     position: relative;
     bottom: -3px;
     margin-right: 10px;
@@ -355,7 +360,9 @@ p {
 }
 
 .about-heading::after,
-.projects-heading::after {
+.projects-heading::after,
+.works-heading::after
+/* .contact-heading::after*/ { 
     content: "";
     display: block;
     position: relative;
