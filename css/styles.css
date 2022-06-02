@@ -162,7 +162,7 @@ p{
 }
 
 #nav-bar{
-    padding: 1% 15% 9%;
+    padding: 1% 7% 7%;
 }
 .navbar{
     padding   : 0 0 4.5rem;
@@ -245,8 +245,6 @@ p{
     height        : auto;
     transform     : translateY(0px);
     animation     : float 5s ease-in-out infinite;
-    padding-top   : 2.5rem;
-    padding-bottom: 2.5rem;
 }
 
  @keyframes float{
@@ -265,7 +263,7 @@ p{
 /* ==== title-Mobile ==== */
 @media (max-width: 1028px){
     .title-image{
-        min-width  : 50px;
+        min-width  : 400px;
         height     : auto;
     }
     #title{
@@ -419,6 +417,7 @@ p{
 .project{
     width: 256px;
     height: auto;
+    
 }
 
 .project__image{
@@ -451,28 +450,10 @@ p{
 }
 
 
-a.tip {
-    text-decoration: none
-}
 
-a.tip span {
-    display: none;
-    color: #fff;
-    font-family: 'eurostile' ;
-    text-align: center;
-    font-size: 1.75rem;
-}
-a.tip:hover span {
-    display: block;
-    z-index: 100;
-    left: 0px;
-    margin: 10px;
-    width: 250px;
-    position: relative;
-    top: -150px;
-    transition: all 1s ease;
-    overflow: hidden;
-}
+
+
+
 .projects-subtitle{
     position: relative;
     color: var(--slate);
