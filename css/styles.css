@@ -282,51 +282,7 @@ p {
 }
 
 
-/* ==== title-Mobile ==== */
-@media (max-width: 1028px) {
-    .title-image {
-        min-width: 400px;
-        height: auto;
-    }
 
-    #title {
-        padding-top: 2%;
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .title {
-        position: relative;
-        top: 1.5rem;
-    }
-
-    .logo {
-        position: relative;
-        height: 48px;
-        width: auto;
-        top: 0px;
-    }
-
-    /* ==== EFFECT ==== */
-    .glassmorfism {
-        height: 60px;
-        background: #fff;
-        border: none;
-        color: white;
-        z-index: 100;
-        transition: background-color 1s ease 0s;
-    }
-
-    /* ==== CONTAINER ==== */
-    .container-fluid {
-        padding-top: 0.5rem;
-        padding-left: 1.5rem;
-    }
-
-    .navbar {
-        background-color: var(--navy);
-    }
-}
 
 /* ==== ABOUT ME ==== */
 
@@ -373,25 +329,6 @@ p {
     background-color: var(--lightest-navy);
 }
 
-
-
-@media (max-width: 1028px) {
-    .about-photo .wrapper {
-        margin: 50px auto 0px;
-        width: 70%;
-        height: 70%;
-        right: 50%;
-        position: relative;
-        bottom: 3.5rem;
-    }
-
-    .column-backend,
-    .column-design,
-    .column-frontend {
-        border: none !important;
-    }
-
-}
 
 .inner {
     display: grid;
@@ -454,9 +391,6 @@ p {
 }
 
 
-
-
-
 /* ==== PROJECTS ==== */
 
 .project {
@@ -482,21 +416,6 @@ p {
     filter: blur(0px);
     -webkit-filter: blur(0px);
 }
-
-@media (max-width: 1028px) {
-    .project {
-        position: relative;
-        text-align: center;
-        left: 25%;
-    }
-
-    .project__image {
-        opacity: 1;
-    }
-}
-
-
-
 
 
 
@@ -561,14 +480,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
 /* ==== Botão lateral ==== */
 #myBtn {
     display: none;
@@ -593,4 +504,95 @@ footer {
     transition: 0.5s;
     background-color: var(--green-shadow);
     color: #fff;
+}
+
+
+
+/* ==== MOBILE RESPONSIVE ==== */
+@media (max-width: 1028px) {
+    .title-image {
+        min-width: 400px;
+        height: auto;
+    }
+
+    #title {
+        padding-top: 2%;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .title {
+        position: relative;
+        top: 1.5rem;
+    }
+
+    .logo {
+        position: relative;
+        height: 48px;
+        width: auto;
+        top: 0px;
+    }
+
+    /* ==== EFFECT ==== */
+    .glassmorfism {
+        height: 60px;
+        background: #fff;
+        border: none;
+        color: white;
+        z-index: 100;
+        transition: background-color 1s ease 0s;
+    }
+
+    /* ==== CONTAINER ==== */
+    .container-fluid {
+        padding-top: 0.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .navbar {
+        background-color: var(--navy);
+    }
+
+
+
+    /* ====  ABOUT ME ==== */
+    .about-photo .wrapper {
+        margin: 50px auto 0px;
+        width: 70%;
+        height: 70%;
+        right: 50%;
+        position: relative;
+        bottom: 3.5rem;
+    }
+    .my-photo {
+        position: relative;
+        width: auto;
+        height: 400px;
+        border-radius: 10px;
+    }
+
+    .column-backend,
+    .column-design,
+    .column-frontend {
+        border-right: none !important;
+        border-bottom: 2px solid var(--dark-slate);
+    }
+
+
+
+    /* ====  PROJECTS  ==== */    
+    .project {
+        position: relative;
+        text-align: center;
+        left: 25%;
+    }
+
+    .project__image {
+        opacity: 1 !important;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+
 }
