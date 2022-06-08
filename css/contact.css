@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;900&display=swap');
+
+:root {
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2, 12, 27, 0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100, 255, 218, 0.1);
+    --green-shadow: rgba(100, 255, 218, 0.1);
+    --pink: #f57dff;
+    --blue: #57cbff;
+    --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
+    --border-radius: 4px;
+}
+
+
+* {
+    padding   : 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--dark-navy);
+    text-align: center;
+    
+}
+
+h1 {
+    font-family   : 'montserrat';
+    font-size     : 59px;
+    font-weight   : 600;
+    padding-bottom: 20px;
+    color         : white;
+}
+
+p{
+    color: white;
+}
+
+p, input,textarea, label{
+    font-family: 'montserrat';
+    font-size  : 18px;
+
+}
+
+
+.container{
+    max-width: 100vh;
+    margin   : 0 auto;
+    padding-top: 4rem;
+}
+
+form{
+    max-width : 500px;
+    margin    : 0 auto;
+    text-align: left;
+    padding   : 20px 0;
+}
+
+input,textarea,label{
+    margin : 0 auto;
+    display: block;
+    width  : 100%;
+    color  : white;
+}
+
+input, textarea{
+    background-color: transparent;
+    border          : 0;
+    border-bottom   : 2px solid white;
+}
+
+input[type=submit]{
+    padding   : 15px 0;
+    margin-top: 30px;
+    cursor    : pointer;
+    font-size : 18px;
+}
+
+input, textarea{
+    color        : white;
+    font-size    : 18px;
+    padding      : 10px;
+    margin-bottom: 5px;
+}
+
+input:focus,textarea:focus{
+    outline: 1px solid #fff;
+}
+
+#footer, p{
+    color: black;
+    
+}
+/*   Footer   */
+#footer{
+    position: fixed;
+    display: flex;
+    bottom: 3rem;
+    width: 100%;
+    align-items: center;
+    height: 60px;
+    text-align      : center;
+    justify-content: center;
+} 
+.footer-icon{
+    margin:20px 0;
+}
