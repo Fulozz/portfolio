@@ -46,6 +46,9 @@ Body {
     background-color: var(--navy);
     font-size: var(--fz-xl);
 }
+main::selection{
+    background-color: var(--green-shadow);
+}
 
 
 h1,
