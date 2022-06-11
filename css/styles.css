@@ -363,6 +363,9 @@ p {
     left: 20px;
     z-index: -1;
 }
+.about-strong{
+    color: var(--white)
+}
 
 .my-photo {
     position: relative;
