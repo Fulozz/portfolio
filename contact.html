@@ -4,36 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact.Me</title>
 
-
+    <link rel="icon" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" href="img/favicon/android-chrome-192x192.png">
+    <link rel="icon" href="img/favicon/android-chrome-512x512.png">
+    <link rel="icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" href="img/favicon/favicon.ico">
+  
 
     <link rel="stylesheet" href="css/contact.css"></link>
     <script src="https://kit.fontawesome.com/2bf71db075.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
+
+
   </head>
 <body>
+
+
+  <section id="nav-bar">
+
+      <nav>
+        <a href="/">
+        <img src="img/logo/logo-roxo.png" id="logo">
+      </a>
+      </nav>
+
+
+  </section>
       
 
         <div class="container">   
-          <h1>Contact Me</h1>
+          <h1 class="title">Contact Me</h1>
+
          <form action="mailto:thiago.sandrade0720@gmail.com" method="POST" enctype="text/plain">
              
           
              <label for="nome">Name:</label>
-              <input type="text" name="name" id="name">
+              <input type="text" name="name" id="name" required>
   
               <label for="email">Email:</label>
-              <input type="email" name="email" id="email">
+              <input type="email" name="email" id="email" required>
   
               <label for="mensagem">Message:</label>
               <textarea name="message" id="message" cols="20" rows="8"></textarea>
-             <input type="submit" value="send"class="btn btn-outline-light btn-lg download-button">
+             <input type="submit" value="send"class="btn btn-outline-light btn-lg download-button" required>
   
           </form>
       </div>
 
-      <footer id="footer" class="section is-short has-text-centered">
+      <footer id="footer" class="">
         <div class="foot">
           <div class="social">
             <a href="https://www.instagram.com/th1ago.andrade/" target="_blank" rel="noreferrer" aria-label="Instagram">
