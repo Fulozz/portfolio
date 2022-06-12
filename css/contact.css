@@ -82,7 +82,10 @@ nav{
 #logo{
     width:100px;
 }
-
+option{
+    color: #000;
+}
+select
 
 .container{
     max-width: 100vh;
@@ -96,14 +99,14 @@ form{
     padding   : 20px 0;
 }
 
-input,textarea,label{
+input,textarea,label,select {
     margin : 0 auto;
     display: block;
     width  : 100%;
     color  : white;
 }
 
-input, textarea{
+input, textarea,select {
     background-color: transparent;
     border          : 0;
     border-bottom   : 2px solid white;
@@ -116,14 +119,14 @@ input[type=submit]{
     font-size : 18px;
 }
 
-input, textarea{
+input, textarea,select {
     color        : white;
     font-size    : 18px;
     padding      : 10px;
     margin-bottom: 5px;
 }
 
-input:focus,textarea:focus{
+input:focus,textarea:focus,select:focus{
     outline: 1px solid #fff;
 }
 
