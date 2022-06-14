@@ -517,8 +517,8 @@
     /* ==== MOBILE RESPONSIVE ==== */
     @media (max-width: 1028px) {
         .title-image {
-            min-width: 400px;
-            height: auto;
+            display: none;
+
         }
 
         #title {
